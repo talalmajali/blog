@@ -1,0 +1,8 @@
+- @posts.each do |post|
+  .post_wrapper
+    %h2.title
+      = link_to post.title, post
+    %p.body
+      = post.body
+    %p.date
+      = post.created_at.strftime("%B, %d, %Y")
