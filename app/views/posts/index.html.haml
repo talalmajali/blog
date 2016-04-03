@@ -1,8 +1,11 @@
-- @posts.each do |post|
-  .post_wrapper
-    %h2.title
-      = link_to post.title, post
-    %p.body
-      = post.body
-    %p.date
-      = post.created_at.strftime("%B, %d, %Y")
+.page-header
+  - @posts.each do |post|
+    .jumbotron
+      %h1
+        = link_to post.title, post
+      %p
+        = post.body
+      %p
+        = post.created_at.strftime("%B, %d, %Y")
+      %p
+        = link_to 'Read More', post, class: 'btn btn-primary'
