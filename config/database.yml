@@ -56,5 +56,5 @@ production:
   encoding: unicode
   database: blog_production
   pool: 5
-  username: blog
-  password:
+  username: talal
+  password: talal123
