@@ -3,6 +3,8 @@
     .jumbotron
       %h1
         = link_to post.title, post
+      %h4
+        = "By #{post.user.email}"
       %p
         = post.body
       %p
